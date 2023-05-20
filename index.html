@@ -1,0 +1,176 @@
+<html>
+<head>
+
+<link href="style.css" rel="stylesheet">
+
+<title> ARIEF </title>
+</head>
+<body style="background-color:F6BF15;">
+
+<br><br><br>
+<center>
+<!--- APPLYING MARQUEE --->
+<center>
+<marquee width="60%" direction="right" height="100px"> <h1>
+HANTU KAK LIMAH BALIK RUMAH </h1>
+</marquee>
+<hr color="white" >
+<hr color="black">
+<hr color="yellow">
+<br><br><br>
+
+<center>
+<img src="ASSET/IMAGE/HKLBR.jpg" width="300px" height="400px">
+<br><br>
+
+<!--- INSERTING VIDEO --->
+<center>
+<video controls width="100%" muted>
+<source src="ASSET/VIDEO/HKL.mp4" type="video/mp4">
+</video>
+<br><br><br>
+
+
+<!--- APPLYING MARQUEE --->
+<center> 
+<marquee width="60%" direction="down" scrollamount="1" height="100px"> <h1>
+HUSSIN UDAH BALIK RUMAH </h1>
+</marquee>
+<br>
+<hr color="white" >
+<hr color="black">
+<hr color="yellow">
+<br>
+
+<!--- INSERTING VIDEO --->
+<center>
+<video controls width="100%">
+<source src="ASSET/VIDEO/HKL2.mp4" type="video/mp4">
+</video>
+<br>
+
+<hr color="white" >
+<hr color="black">
+<hr color="yellow">
+<br><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jEYqFw9fe2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay="mute"></iframe>
+<br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-8YK-JfAYQ4?autoplay=1&mute=1">
+</iframe>
+
+
+
+<hr color="yellow">
+<hr color="green">
+<br><br><br>
+<hr color="yellow">
+<hr color="green">
+
+<br><br><br>
+
+<h1> Lagu-lagu awok gemor </h1>
+
+<!--- INSERTING AUDIO --->
+<audio controls>
+<source src="ASSET/AUDIO/USOP.mp3" type="audio/mpeg"> 
+</audio>
+<br><br>
+
+<!--- INSERTING AUDIO --->
+<audio controls>
+<source src="ASSET/AUDIO/music1.mp3" type="audio/mpeg">
+</audio>
+
+<br><br>
+
+<!--- INSERTING AUDIO --->
+<audio controls>
+<source src="ASSET/AUDIO/music2.mp3" type="audio/mpeg">
+</audio>
+
+<br><br>
+
+<!--- INSERTING AUDIO --->
+<audio controls>
+<source src="ASSET/AUDIO/music3.mp3" type="audio/mpeg">
+</audio>
+
+<br><br>
+
+<!--- INSERTING AUDIO --->
+<audio controls>
+<source src="ASSET/AUDIO/music4.mp3" type="audio/mpeg">
+</audio>
+
+<br><br>
+
+<!--- EMBEDDING PDF FILE --->
+<hr color="white">
+<hr color="yellow">
+<hr color="black">
+<iframe src="ASSET/PDF/HANTU.pdf" width="80%" height="500px">
+</iframe>
+<hr color="white">
+<hr color="yellow">
+<hr color="black">
+<br><br>
+
+<!--- APPLYING JAVA APPLET AUDIO --->
+<br><br><br>
+<hr color="green">
+<hr color="yellow">
+<center> <i> <b> <h1> Udah pukul berapa tuu </h1>
+<hr color="yellow">
+<hr color="green">
+<br><br>
+
+
+<!--- TO CALL THE CSS --->
+<div id="clock"> 12.17.45</div>
+
+<!--- TO LINK FOR A CURRENT TIME --->
+<script src="clock2.js"> </script>
+
+
+<script>
+setInterval(showTime, 1000);
+function showTime() {
+    let time = new Date();
+    let hour = time.getHours();
+    let min = time.getMinutes();
+    let sec = time.getSeconds();
+    am_pm = "AM";
+  
+    if (hour > 12) {
+        hour -= 12;
+        am_pm = "PM";
+    }
+    if (hour == 0) {
+        hr = 12;
+        am_pm = "AM";
+    }
+  
+    hour = hour < 10 ? "0" + hour : hour;
+    min = min < 10 ? "0" + min : min;
+    sec = sec < 10 ? "0" + sec : sec;
+  
+    let currentTime = hour + ":" 
+            + min + ":" + sec + am_pm;
+  
+    document.getElementById("clock")
+            .innerHTML = currentTime;
+}
+showTime();
+</script>
+<br><br>
+<hr color="white" >
+<hr color="black">
+<hr color="yellow">
+<br><br>
+
+
+</body>
+
+
+</html>
